@@ -1,0 +1,10 @@
+#!/bin/bash
+
+my_array=(apple banana "Fruit Basket" orange)
+# display all elements of an array
+echo ${my_array[@]}
+#display total number of elements
+echo ${#my_array[@]}
+my_array[2]=apricot
+echo ${my_array[2]}
+
