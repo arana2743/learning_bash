@@ -1,0 +1,21 @@
+#!/bin/bash
+
+PRICE_PER_APPLE=10
+echo "The price of an apple today is : \$$PRICE_PER_APPLE"
+
+# assigning variables with command
+FILELIST=`ls -lrt`
+
+FILE_WITH_TIME_STAMP=/tmp/my-dir/file_$(/bin/date +%Y-%m-%d).txt
+
+echo $FILELIST
+echo $FILE_WITH_TIME_STAMP
+
+
+BIRTHDATE="Nov 10, 1995"
+Presents=10
+BIRTHDAY=$(/bin/date -d "$BIRTHDATE" +%A)
+
+echo "$BIRTHDATE"
+echo "$Presents"
+echo "$BIRTHDAY"
