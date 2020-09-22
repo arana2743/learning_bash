@@ -1,0 +1,8 @@
+#!/bin/bash
+
+i=0
+while [ $i -lt 4 ]
+do
+echo "$i times"
+i=$[i+1]
+done
